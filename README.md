@@ -1,4 +1,10 @@
 # android_udoo_manifest
+
+## How to compile AOSP for UDOO NEO
+
+```
+repo init -u https://github.com/UDOOboard/android_udoo_platform_manifest -b android-10.0.0
+```
     
 ## u-boot for Android
 * Booting Android with u-boot : u-boot-2020.07/doc/android/boot-image.rst    
