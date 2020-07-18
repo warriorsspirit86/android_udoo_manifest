@@ -21,6 +21,16 @@
 ``
 make distclean && make udoo_neo_defconfig CONFIG_CMD_BOOT_ANDROID=y CONFIG_ANDROID_BOOT_IMAGE=y CONFIG_CMD_LOAD_ANDROID=y CONFIG_ANDROID_BOOTLOADER=y all -j8
 ``
+    
+Some of the u-boot config for android:
+```
+CONFIG_ANDROID_AB
+CONFIG_CMD_LOAD_ANDROID
+CONFIG_CMD_ANDROID_AB_SELECT
+CONFIG_CMD_BOOT_ANDROID
+CONFIG_ANDROID_BOOT_IMAGE
+```
+    
 ## BoardConfig.mk for Android 10
     
 ```
