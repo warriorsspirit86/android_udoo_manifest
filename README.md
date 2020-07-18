@@ -31,6 +31,10 @@ CONFIG_CMD_BOOT_ANDROID
 CONFIG_ANDROID_BOOT_IMAGE
 ```
     
+Some of the clue links for u-boot, specially for fastboot:
+* https://bootlin.com/pub/2015/imx-flash/0002-secomx6quq7-enable-fastboot.patch
+* https://bootlin.com/pub/2015/imx-flash/flash.sh
+    
 ## BoardConfig.mk for Android 10
     
 ```
