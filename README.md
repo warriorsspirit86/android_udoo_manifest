@@ -64,3 +64,6 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 $ simg2img system.img system_raw.img
 $ dd if=system_raw.img of=/dev/mmcblk0p2 bs=1M status=progress
 ```
+    
+## Other links
+* https://github.com/compulab-yokneam/imx8-android/blob/master/o8/README.adoc    
