@@ -51,10 +51,16 @@ BOARD_KERNEL_CMDLINE += uart_from_osc clk_ignore_unused
 PRODUCT_COPY_FILES += device/udoo/udooneo_6sx-kernel/zImage:kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_PREBUILT_DTBIMAGE_DIR := device/udoo/udooneo_6sx-kernel/dts
-
 TARGET_UBOOT_VERSION := uboot-imx
 TARGET_BOOTLOADER_CONFIG := imx6sx:udoo_neo_android_defconfig
 TARGET_KERNEL_DEFCONF := udoo_neo_android_defconfig
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+```
+    
+## Flashing images to mmc
+    
+```
+$ simg2img system.img system_raw.img
+$ dd if=system_raw.img of=/dev/mmcblk0p2 bs=1M status=progress
 ```
